@@ -9,6 +9,11 @@ using UnityEngine.UI;
 public class MenuUIHandler : MonoBehaviour
 {
     [SerializeField] InputField Username;
+
+    private void Update()
+    {
+        NameSelected();
+    }
     public void LoadScene()
     {
         SceneManager.LoadScene(1);
